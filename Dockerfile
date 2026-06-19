@@ -1,5 +1,5 @@
 FROM amazoncorretto:21
 
-COPY target/*.jar app.jar
+COPY cd41-1.0-SNAPSHOT.jar app.jar
 
 CMD ["java","-jar","app.jar"]
