@@ -1,33 +1,13 @@
-package com.example;
+package org.example;
 
 public class app {
 
-    public static int add(int a, int b) {
-        return a + b;
-    }
+    public static void main(String[] args) throws Exception {
 
-    public static int subtract(int a, int b) {
-        return a - b;
-    }
+        System.out.println("Application Started");
 
-    public static int multiply(int a, int b) {
-        return a * b;
-    }
-
-    public static double divide(int a, int b) {
-        if (b == 0) {
-            throw new ArithmeticException("Cannot divide by zero");
+        while (true) {
+            Thread.sleep(60000);
         }
-        return (double) a / b;
-    }
-
-    public static void main(String[] args) {
-        int a = 10;
-        int b = 5;
-
-        System.out.println("Addition: " + add(a, b));
-        System.out.println("Subtraction: " + subtract(a, b));
-        System.out.println("Multiplication: " + multiply(a, b));
-        System.out.println("Division: " + divide(a, b));
     }
 }
